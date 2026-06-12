@@ -1,0 +1,19 @@
+{
+  "name": "user-stories-module-3",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n \"vite,api\" -c \"cyan,magenta\" \"vite\" \"json-server --watch db.json --port 3001\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "api": "json-server --watch db.json --port 3001"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "concurrently": "^9.1.0",
+    "json-server": "^0.17.4",
+    "tailwindcss": "^4.3.0",
+    "vite": "^6.3.0"
+  }
+}
