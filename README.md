@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src=".github/example.png" alt="SpaceBook Preview" width="800" />
+  <img src=".github/example.png" alt="UserStories Preview" width="800" />
 </p>
 
 This repository contains four weekly projects that progressively build JavaScript skills, from basic interactivity to a full-stack web application with API integration.
