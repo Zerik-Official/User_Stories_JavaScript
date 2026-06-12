@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Laptop",
+      "body": "$1200",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Mouse",
+      "body": "$25",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "title": "Keyboard",
+      "body": "$75",
+      "userId": 1
+    },
+    {
+      "title": "Computador",
+      "body": "$500",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "title": "Computador",
+      "body": "$500",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "title": "Computador",
+      "body": "$500",
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "title": "Computador",
+      "body": "$500",
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "title": "Computador",
+      "body": "$500",
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "title": "Computador",
+      "body": "$500",
+      "userId": 1,
+      "id": 9
+    }
+  ]
+}
