@@ -38,6 +38,12 @@ UserStoriesModule_3/
 ## Quick Start
 
 ```bash
+# Clone the repository
+git clone https://github.com/Zerik-Official/User_Stories_JavaScript
+
+# change into repository folder
+cd User_Stories_JavaScript
+
 # Install dependencies
 npm install
 
