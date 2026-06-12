@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 4 - Full Stack App with API</title>
+  <link rel="stylesheet" href="../shared/tailwind.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../shared/textTarea.css">
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col items-center justify-center p-6">
+  <div class="w-full max-w-4xl">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-indigo-400">Week 4: Product Manager</h1>
+      <p class="text-gray-500 mt-1 text-sm">M3S4 - Full web app with DOM, Local Storage &amp; Fetch API</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+      <div class="lg:col-span-3 space-y-6">
+        <div class="bg-gray-900 rounded-xl p-6 border border-gray-700 shadow-xl">
+          <form id="product-form" class="flex gap-2 mb-4">
+            <input id="name-input" type="text" placeholder="Product name" required class="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder-gray-500">
+            <input id="price-input" type="number" step="0.01" min="0" placeholder="Price" required class="w-28 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder-gray-500">
+            <button type="submit" class="px-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-400">
+              <i class="fa-solid fa-plus mr-1"></i>Add
+            </button>
+          </form>
+          <ul id="product-list" class="space-y-2"></ul>
+        </div>
+
+        <div class="flex justify-center">
+          <button id="sync-btn" class="px-6 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-lg shadow-lg shadow-indigo-600/25 transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+            <i class="fa-solid fa-cloud-arrow-up mr-1"></i>Sync with API
+          </button>
+        </div>
+      </div>
+
+      <div class="lg:col-span-2" id="output"></div>
+    </div>
+
+    <div class="mt-6 text-center text-xs text-gray-500">
+      <i class="fa-solid fa-circle-info mr-1"></i>Products persist locally. Click "Sync with API" to POST all items to the local JSON Server.
+    </div>
+  </div>
+
+  <script src="../shared/textTarea.js"></script>
+  <script src="app.js"></script>
+  <script>
+    new TextTarea('output');
+  </script>
+</body>
+</html>
