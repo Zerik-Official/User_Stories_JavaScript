@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 2 - Data Management</title>
+  <link rel="stylesheet" href="../shared/tailwind.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../shared/textTarea.css">
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col items-center justify-center p-6">
+  <div class="w-full max-w-2xl">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-teal-400">Week 2: Data Management</h1>
+      <p class="text-gray-500 mt-1 text-sm">M3S2 - Objects, Sets, Maps, and iteration</p>
+    </div>
+
+    <div class="flex justify-center mb-6">
+      <button id="run-btn" class="px-8 py-3 bg-teal-600 hover:bg-teal-500 text-white font-semibold rounded-lg transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-teal-400">
+        <i class="fa-solid fa-play mr-2"></i>Run
+      </button>
+    </div>
+
+    <div id="output"></div>
+
+    <div class="mt-6 text-center text-xs text-gray-500">
+      <i class="fa-solid fa-circle-info mr-1"></i>Click Run to execute all data structure operations.
+    </div>
+  </div>
+
+  <script src="../shared/textTarea.js"></script>
+  <script src="gestion_datos.js"></script>
+  <script>
+    new TextTarea('output');
+    document.getElementById('run-btn').addEventListener('click', runDataManagement);
+  </script>
+</body>
+</html>
