@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 3 - DOM Manipulation & Local Storage</title>
+  <link rel="stylesheet" href="../shared/tailwind.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../shared/textTarea.css">
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col items-center justify-center p-6">
+  <div class="w-full max-w-4xl">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-lime-400">Week 3: Notes App</h1>
+      <p class="text-gray-500 mt-1 text-sm">M3S3 - DOM manipulation with Local Storage persistence</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="bg-gray-900 rounded-xl p-6 border border-gray-700 shadow-xl">
+        <div class="flex gap-2 mb-4">
+          <input id="note-input" type="text" placeholder="Write a note..." class="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-transparent placeholder-gray-500">
+          <button id="add-btn" class="px-5 py-2 bg-lime-600 hover:bg-lime-500 text-white text-sm font-semibold rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-lime-400">
+            <i class="fa-solid fa-plus mr-1"></i>Add
+          </button>
+        </div>
+        <ul id="note-list" class="space-y-2">
+          <li class="text-gray-600 text-sm text-center py-8">
+            <i class="fa-solid fa-pen mr-2"></i>No notes yet. Add one above!
+          </li>
+        </ul>
+      </div>
+
+      <div id="output"></div>
+    </div>
+
+    <div class="mt-6 text-center text-xs text-gray-500">
+      <i class="fa-solid fa-circle-info mr-1"></i>Notes persist across page reloads via Local Storage. All actions are logged in the console panel.
+    </div>
+  </div>
+
+  <script src="../shared/textTarea.js"></script>
+  <script src="manipulacion_dom.js"></script>
+  <script>
+    new TextTarea('output');
+  </script>
+</body>
+</html>
